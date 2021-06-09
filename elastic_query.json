@@ -1,0 +1,34 @@
+{
+  "size": 0,
+  "aggs": {
+    "filtros": {
+      "filters": {
+        "filters": {
+          "primeira_dose": {
+            "match": {
+              "vacina_descricao_dose": {
+                "query": "1ª Dose",
+                "operator": "and"
+              }
+            }
+          },
+          "segunda_dose": {
+            "match": {
+              "vacina_descricao_dose": {
+                "query": "2ª Dose",
+                "operator": "and"
+              }
+            }
+          }
+        }
+      },
+      "aggs": {
+        "unique_docs": {
+          "cardinality": {
+            "field": "document_id"
+          }
+        }
+      }
+    }
+  }
+}
