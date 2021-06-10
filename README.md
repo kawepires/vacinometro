@@ -38,3 +38,6 @@ Fontes como:
 - http://www.giscard.com.br/coronavirus/vacinometro-covid19-brasil.php
 
 Têm valores diferentes, dificultando a comparação de dados. Felizmente, esse script se aproxima dos valores de https://qsprod.saude.gov.br/extensions/DEMAS_C19Vacina/DEMAS_C19Vacina.html site oficial de tracking do governo.
+
+## Créditos
+Agradecimentos à [Quicktype](https://app.quicktype.io/) e [curl-to-GO](https://mholt.github.io/curl-to-go/), que facilitaram as conversões de JSON para objetos, struturas ou classes.
